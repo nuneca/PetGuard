@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PetGuard AI — monitoramento inteligente para o seu pet</title>
+<meta name="description" content="Câmera inteligente que aprende a rotina do seu pet e avisa você na hora em que algo foge do normal.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a class="brand" href="#topo">
+      <img class="brand-mark" src="logo.png" alt="PetGuard AI">
+      <span>PetGuard AI</span>
+    </a>
+    <nav class="nav" id="mainNav">
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#recursos">Recursos</a>
+      <a href="#projeto">O projeto</a>
+      <a href="#lista">Lista de espera</a>
+    </nav>
+    <a class="btn btn-primary btn-small" href="#lista">Entrar na lista</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="topo">
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="kicker">Pet tech &amp; automação residencial</p>
+        <h1>Enquanto você sai, alguém continua de olho.</h1>
+        <p class="hero-lede">O PetGuard AI observa a rotina do seu animal pela câmera, aprende o que é normal para ele e avisa você no celular assim que algo sai do padrão — antes que vire um problema.</p>
+        <div class="hero-actions">
+          <a href="#lista" class="btn btn-primary">Entrar na lista de espera</a>
+          <a href="#como-funciona" class="btn btn-ghost">Ver como funciona</a>
+        </div>
+        <p class="hero-note">Projeto acadêmico em desenvolvimento na FATEC Praia Grande, com hardware IoT e visão computacional.</p>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <img class="hero-logo" src="logo.png" alt="PetGuard AI">
+
+        <div class="status-card" id="statusCard">
+          <span class="status-dot" id="statusDot"></span>
+          <div>
+            <p class="status-label" id="statusLabel">Monitorando</p>
+            <p class="status-text" id="statusText">Rex está descansando no sofá</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="problem">
+    <div class="wrap problem-grid">
+      <h2>Sair de casa não devia significar perder o rastro do seu pet.</h2>
+      <p>Tutores voltam do trabalho sem saber se o dia foi tranquilo ou se algo incomodou o animal — um latido excessivo, horas sem se mexer, um comportamento fora do comum. Câmeras comuns mostram imagem, mas não interpretam o que está acontecendo. O PetGuard AI nasceu para preencher essa lacuna: um sistema que une um hardware com câmera, visão computacional e uma aplicação web para transformar imagem em informação útil.</p>
+    </div>
+  </section>
+
+  <section class="how" id="como-funciona">
+    <div class="wrap">
+      <p class="kicker center">Como funciona</p>
+      <h2 class="center">Da câmera ao seu celular, em três etapas</h2>
+      <div class="steps">
+        <div class="step">
+          <span class="step-num">1</span>
+          <h3>A câmera capta o ambiente</h3>
+          <p>Um dispositivo IoT com câmera acompanha o espaço onde o pet passa o dia, registrando movimento e postura em tempo real.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">2</span>
+          <h3>A IA aprende a rotina dele</h3>
+          <p>Um modelo de visão computacional identifica o animal e constrói, com o tempo, um perfil do que é comportamento normal — quanto se move, quando descansa, como reage.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">3</span>
+          <h3>Você recebe o alerta certo</h3>
+          <p>Quando algo foge desse padrão, a aplicação web notifica o tutor na hora, com contexto — não apenas um vídeo para assistir do zero.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="recursos">
+    <div class="wrap">
+      <p class="kicker center">Recursos</p>
+      <h2 class="center">Feito para tranquilizar quem cuida</h2>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <h3>Perfil de comportamento</h3>
+          <p>O sistema aprende os hábitos de cada pet individualmente, em vez de aplicar uma regra genérica para todos os animais.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Alertas em tempo real</h3>
+          <p>Notificações chegam assim que uma tendência atípica é identificada, direto na aplicação web, de qualquer lugar.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Relatórios de rotina</h3>
+          <p>Históricos e resumos mostram como o comportamento do pet evolui ao longo dos dias e das semanas.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Acesso remoto</h3>
+          <p>A aplicação web pode ser acessada de qualquer lugar, sem depender de estar em casa ou na mesma rede.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Detecção por visão computacional</h3>
+          <p>O reconhecimento do animal e de seus movimentos acontece diretamente sobre o vídeo captado pela câmera.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Menos ansiedade, mais presença</h3>
+          <p>Saber o que está acontecendo em casa reduz a preocupação de quem precisa se ausentar por longos períodos.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="mission" id="projeto">
+    <div class="wrap mission-grid">
+      <div>
+        <p class="kicker">O projeto</p>
+        <h2>Um projeto integrador de IoT e desenvolvimento web</h2>
+        <p>O PetGuard AI é um projeto integrador da FATEC Praia Grande, que une hardware IoT, visão computacional e uma aplicação web em um único sistema. O objetivo é desenvolver essa integração de ponta a ponta: da câmera que observa o pet até a interface que leva a informação até o tutor, em tempo real e de qualquer lugar.</p>
+      </div>
+      <div class="mission-goal">
+        <h3>Objetivo</h3>
+        <p>Desenvolver um sistema integrado de hardware IoT e software web, baseado em monitoramento por câmera, para analisar o comportamento de pets e alertar tutores em tempo real.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="waitlist" id="lista">
+    <div class="wrap waitlist-box">
+      <div class="waitlist-copy">
+        <h2>Quer ser avisado quando o PetGuard AI estiver disponível?</h2>
+        <p>Deixe seu contato e conte um pouco sobre seu pet. Assim que o sistema estiver pronto para os primeiros testes, você é quem sabe primeiro.</p>
+      </div>
+      <form class="waitlist-form" id="waitlistForm" novalidate>
+        <div class="field">
+          <label for="nome">Seu nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Como podemos te chamar" required>
+        </div>
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="voce@email.com" required>
+        </div>
+        <div class="field">
+          <label for="pet">Tipo de pet</label>
+          <select id="pet" name="pet">
+            <option value="gato">Gato</option>
+            <option value="cachorro">Cachorro</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Quero entrar na lista</button>
+        <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="brand footer-brand">
+      <img class="brand-mark" src="logo.png" alt="PetGuard AI">
+      <span>PetGuard AI</span>
+    </div>
+    <p class="footer-note">Projeto integrador — Tecnologia em Desenvolvimento de Software Multiplataforma, FATEC Praia Grande.</p>
+    <p class="footer-team">Equipe: Julia Nunes Vilela · Nicolas Gomes Ruiz · Lumine Correia Gonçalves · Natan Gouveia Ayres</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
